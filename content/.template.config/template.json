@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Maxime Rouiller",
+    "classification": ["Config"],
+    "name": ".NET Core 2.1 Dockerfile",
+    "shortname": "dockerfile",
+    "tags": {
+        "type": "item"
+    },
+    "sourceName": "ProjectName",
+    "preferNameDirectory": true,
+    "symbols": {
+        "AddDockerIgnore": {
+            "type": "parameter",
+            "description": "Adds a .dockerignore file to reduce the size of the container.",
+            "dataType": "bool",
+            "defaultValue": "false"
+        }
+    },
+    "sources": [{
+        "modifiers": [{
+            "condition": "(!AddIgnoreFile)",
+            "exclude": [
+                ".dockerignore"
+            ]
+        }]
+    }]
+}
