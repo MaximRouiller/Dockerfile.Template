@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MaximRouiller.Dockerfile.DotnetCore.Template</id>
+    <version>1.0.0</version>
+    <repository type="git" url="https://github.com/MaximRouiller/Dockerfile.Template.git">
+    <licenseUrl>https://raw.githubusercontent.com/MaximRouiller/Dockerfile.Template/master/LICENSE</licenseUrl>
+    <description>
+      Creates a Dockerfile for .NET Core 2.1 using `dotnet new dockerfile`
+    </description>
+    <authors>Maxime Rouiller</authors>
+    <tags>dotnet new template docker</tags>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+</package>
